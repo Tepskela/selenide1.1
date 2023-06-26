@@ -8,7 +8,7 @@ class CallbackTest {
 
     @Test
     void shouldTest() {
-        
+
 
     }
 
