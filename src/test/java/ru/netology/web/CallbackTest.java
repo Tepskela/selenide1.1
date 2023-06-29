@@ -12,8 +12,7 @@ class CallbackTest {
     @Test
     void shouldTest() {
         open ("http://localhost:9999/");
-        SelenideElement form = $("[class=App_appContainer__3jRx1]");
-        //SelenideElement form = $("[class=form form_size_m form_theme_alfa-on-white]");
+        SelenideElement form = $("[method=post]");
         form.$("[data-test-id=name] input").setValue("Александр");
         form.$("[data-test-id=phone] input").setValue("+79000000000");
         form.$("[data-test-id=agreement]").click();
